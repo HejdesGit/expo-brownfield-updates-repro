@@ -46,10 +46,10 @@ true
 cd "$RN"
 npx expo prebuild --platform android --clean --no-install >/dev/null
 echo "sdk.dir=$ANDROID_HOME" > android/local.properties
-if [[ "${VIEWFACTORY_FIX:-0}" == 1 ]]; then
+if [[ "${VIEWFACTORY_FIX:-1}" == 1 ]]; then
   cp "$ROOT/fixes/viewfactory/ReactNativeViewFactory.kt" android/brownfield/src/main/java/dev/repro/brownfield/
   echo "using fixes/viewfactory/ReactNativeViewFactory.kt"
 fi
 
 npx expo-brownfield build:android --release --verbose
-echo "Published dev.repro:brownfield:1.0.0 (PR_50943=${PR_50943:-0} VIEWFACTORY_FIX=${VIEWFACTORY_FIX:-0} SO_FIX=${SO_FIX:-0} PR_50943_DIAG=${PR_50943_DIAG:-0} NDK_VERSION=${NDK_VERSION:-default})"
+echo "Published dev.repro:brownfield:1.0.0 (PR_50943=${PR_50943:-0} VIEWFACTORY_FIX=${VIEWFACTORY_FIX:-1} SO_FIX=${SO_FIX:-0} PR_50943_DIAG=${PR_50943_DIAG:-0} NDK_VERSION=${NDK_VERSION:-default})"

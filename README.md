@@ -1,5 +1,7 @@
 # expo-brownfield + expo-updates on Android: blank surface after error-recovery rollback
 
+> **Branch `viewfactory-fix`:** `scripts/build-aar.sh` builds with the ReactNativeViewFactory fix (fixes/viewfactory/) by default (`VIEWFACTORY_FIX=1`). Run `VIEWFACTORY_FIX=0 ./scripts/build-aar.sh` for the unpatched build, or use the `main` branch.
+
 A self-contained reproduction of two Android problems in an Expo brownfield setup that uses `expo-updates`:
 
 1. **Bug 1, the main one:** when a downloaded update throws at startup, `expo-updates` error recovery falls back to the previous update in the same process, but the React Native view embedded in the host app stays blank for the rest of the session. Related upstream: [expo/expo#41543](https://github.com/expo/expo/issues/41543) and the open PR [expo/expo#50943](https://github.com/expo/expo/pull/50943).
