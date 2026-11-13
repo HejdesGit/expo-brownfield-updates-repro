@@ -1,0 +1,11 @@
+# expo-updates' own instrumentation test APK, built in rn/android with
+#   ORG_GRADLE_PROJECT_ndkVersion=27.0.12077973 ./gradlew :expo-updates:assembleDebugAndroidTest
+# (tests were built, not run)
+
+SO_FIX=2 (pickFirst moved to the androidTest component): BUILD SUCCESSFUL
+  lib/arm64-v8a/libc++_shared.so   present (1292904 bytes)
+  lib/arm64-v8a/libfbjni.so        present (177000 bytes)
+
+SO_FIX=1 (pickFirst lines only removed): BUILD SUCCESSFUL
+  lib/arm64-v8a/libc++_shared.so   missing
+  lib/arm64-v8a/libfbjni.so        missing

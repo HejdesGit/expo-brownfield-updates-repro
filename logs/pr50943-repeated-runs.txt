@@ -1,0 +1,31 @@
+# expo/expo#50943 applied to expo-updates 58.0.22, brownfield host, release AAR
+# Each run: scripts/run-rollback.sh (fresh install, A running, broken B downloaded, cold start into B)
+# RECOVERED = 'Running "main"' in the same pid after 'Restarting previously running React Native Surfaces'
+
+## PR patch only (host APK built from PR_50943=1)
+MainActivity (ReactNativeFragment, restores on recreate)  recorded run (media/pr50943.mp4): RECOVERED
+MainActivity  run 1-3: BLANK, BLANK, BLANK
+DocsExampleActivity (showReactNativeFragment(), as in the docs)  first run + runs 1-3: BLANK x4
+
+## PR patch + diagnostic Log.w lines (fixes/pr-50943/diagnostic-logging.patch)
+main#1 BLANK | restart(): hostWasDestroyed=false activity=null lifecycleState=BEFORE_CREATE 
+docs#1 BLANK | restart(): hostWasDestroyed=false activity=null lifecycleState=BEFORE_CREATE 
+main#2 BLANK | restart(): hostWasDestroyed=false activity=null lifecycleState=BEFORE_CREATE 
+docs#2 BLANK | restart(): hostWasDestroyed=false activity=null lifecycleState=BEFORE_CREATE 
+main#3 BLANK | restart(): hostWasDestroyed=false activity=null lifecycleState=BEFORE_CREATE 
+docs#3 BLANK | restart(): hostWasDestroyed=false activity=null lifecycleState=BEFORE_CREATE 
+
+## Event order in run main#1 (diagnostic build)
+11-13 17:40:04.593 15460 15460 W unknown:BridgelessReact: ReactHost{0}.onHostResume(activity)
+11-13 17:40:04.593 15460 15460 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostResume()
+11-13 17:40:04.638 15460 15492 W unknown:BridgelessReact: ReactHost{0}.handleHostException(message = "[runtime not ready]: Error: Intentional module-scope error in a broken update, stack:
+11-13 17:40:04.639 15460 15492 I ReactNativeJS: Running "main"
+11-13 17:40:04.967 15460 15460 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostResume()
+11-13 17:40:04.968 15460 15460 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Executing ReactInstanceEventListeners
+11-13 17:40:04.969 15460 15460 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask(): Starting React Native destruction
+11-13 17:40:04.973 15460 15460 W Pr50943Diag: restart(): hostWasDestroyed=false activity=null lifecycleState=BEFORE_CREATE
+11-13 17:40:04.974 15460 15486 W unknown:BridgelessReact: ReactHost{0}.reload(): Waiting for destroy to finish, before reloading React Native.
+11-13 17:40:04.974 15460 15460 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask(): Resetting ReactContext ref
+11-13 17:40:05.036 15460 15486 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Restarting previously running React Native Surfaces
+11-13 17:40:05.036 15460 15460 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostResume()
+11-13 17:40:05.036 15460 15460 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Executing ReactInstanceEventListeners

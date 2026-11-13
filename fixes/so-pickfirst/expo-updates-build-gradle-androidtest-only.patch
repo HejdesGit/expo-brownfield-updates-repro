@@ -1,0 +1,28 @@
+--- a/packages/expo-updates/android/build.gradle	2026-11-13 17:38:51
++++ b/packages/expo-updates/android/build.gradle	2026-11-13 17:38:51
+@@ -131,9 +131,6 @@
+     unitTests.includeAndroidResources = true
+ 
+     packagingOptions {
+-      pickFirst "**/libfbjni.so"
+-      pickFirst "**/libc++_shared.so"
+-
+       resources.excludes.add("META-INF/LICENSE.md")
+       resources.excludes.add("META-INF/LICENSE-notice.md")
+     }
+@@ -151,6 +148,15 @@
+   }
+ }
+ 
++// `testOptions { packagingOptions { ... } }` configures the library's own packaging options, so
++// pickFirst entries there override the excludes above and the AAR ships its own copies of
++// libc++_shared.so and libfbjni.so. Only the instrumentation test APK needs one copy of each.
++androidComponents {
++  onVariants(selector().all()) { variant ->
++    variant.androidTest?.packaging?.jniLibs?.pickFirsts?.addAll(["**/libfbjni.so", "**/libc++_shared.so"])
++  }
++}
++
+ ksp {
+   arg("room.generateKotlin", "true")
+   // uncomment below to export the database schema when making changes

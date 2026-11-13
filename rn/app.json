@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "rn",
+    "slug": "rn",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "runtimeVersion": "1",
+    "updates": {
+      "url": "http://10.0.2.2:3000/api/manifest",
+      "enabled": true,
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 0
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "dev.repro.brownfield.rn"
+    },
+    "android": {
+      "package": "dev.repro.brownfield.rn",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      [
+        "expo-brownfield",
+        {
+          "android": {
+            "libraryName": "brownfield",
+            "group": "dev.repro",
+            "package": "dev.repro.brownfield",
+            "version": "1.0.0"
+          }
+        }
+      ]
+    ]
+  }
+}

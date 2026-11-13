@@ -1,0 +1,12 @@
+--- a/packages/expo-updates/android/build.gradle
++++ b/packages/expo-updates/android/build.gradle
+@@ -131,9 +131,6 @@
+     unitTests.includeAndroidResources = true
+ 
+     packagingOptions {
+-      pickFirst "**/libfbjni.so"
+-      pickFirst "**/libc++_shared.so"
+-
+       resources.excludes.add("META-INF/LICENSE.md")
+       resources.excludes.add("META-INF/LICENSE-notice.md")
+     }

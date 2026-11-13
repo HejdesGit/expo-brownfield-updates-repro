@@ -1,0 +1,127 @@
+11-13 17:27:26.398  7284  7307 I dev.expo.updates: Updates state change: StartStartup
+11-13 17:27:26.408  7284  7284 W unknown:BridgelessReact: ReactHost{0}.startSurface(surfaceId = 0): Schedule
+11-13 17:27:26.408  7284  7284 W unknown:BridgelessReact: ReactHost{0}.attachSurface(surfaceId = 0)
+11-13 17:27:26.409  7284  7312 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask()
+11-13 17:27:26.409  7284  7312 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Start
+11-13 17:27:26.409  7284  7312 W unknown:BridgelessReact: ReactHost{0}.getJSBundleLoader()
+11-13 17:27:26.434  7284  7284 W unknown:BridgelessReact: ReactHost{0}.onHostResume(activity)
+11-13 17:27:26.501  7284  7307 I dev.expo.updates: Updates state change: Check
+11-13 17:27:26.533  7284  7312 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating BridgelessReactContext
+11-13 17:27:26.533  7284  7312 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating ReactInstance
+11-13 17:27:26.558  7284  7307 I dev.expo.updates: Updates state change: CheckCompleteAvailable
+11-13 17:27:26.558  7284  7307 I dev.expo.updates: Updates state change: Download
+11-13 17:27:26.638  7284  7312 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Loading JS Bundle
+11-13 17:27:26.638  7284  7312 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): DevSupportManager.onNewReactContextCreated()
+11-13 17:27:26.638  7284  7312 W unknown:BridgelessReact: ReactHost{0}.startSurface(surfaceId = 0): Execute
+11-13 17:27:26.706  7284  7321 I ReactNativeJS: Running "main"
+11-13 17:27:26.816  7284  7284 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostResume()
+11-13 17:27:26.819  7284  7284 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Executing ReactInstanceEventListeners
+11-13 17:27:26.921  7284  7308 I dev.expo.updates: Updates state change: DownloadCompleteWithUpdate
+11-13 17:27:26.921  7284  7308 I dev.expo.updates: ErrorRecovery: remote load status changed: NEW_UPDATE_LOADED
+11-13 17:27:26.921  7284  7308 I dev.expo.updates: Updates state change: EndStartup
+11-13 17:27:35.257  7489  7507 I dev.expo.updates: Updates state change: StartStartup
+11-13 17:27:35.277  7489  7489 W unknown:BridgelessReact: ReactHost{0}.startSurface(surfaceId = 0): Schedule
+11-13 17:27:35.277  7489  7489 W unknown:BridgelessReact: ReactHost{0}.attachSurface(surfaceId = 0)
+11-13 17:27:35.278  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask()
+11-13 17:27:35.278  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Start
+11-13 17:27:35.278  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getJSBundleLoader()
+11-13 17:27:35.280  7489  7507 I dev.expo.updates: Updates state change: Check
+11-13 17:27:35.280  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating BridgelessReactContext
+11-13 17:27:35.280  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating ReactInstance
+11-13 17:27:35.301  7489  7489 W unknown:BridgelessReact: ReactHost{0}.onHostResume(activity)
+11-13 17:27:35.301  7489  7489 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostResume()
+11-13 17:27:35.327  7489  7507 I dev.expo.updates: Updates state change: CheckCompleteUnavailable
+11-13 17:27:35.332  7489  7507 I dev.expo.updates: ErrorRecovery: remote load status changed: IDLE
+11-13 17:27:35.360  7489  7507 I dev.expo.updates: Updates state change: EndStartup
+11-13 17:27:35.373  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Loading JS Bundle
+11-13 17:27:35.373  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): DevSupportManager.onNewReactContextCreated()
+11-13 17:27:35.374  7489  7514 W unknown:BridgelessReact: ReactHost{0}.startSurface(surfaceId = 0): Execute
+11-13 17:27:35.405  7489  7489 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostResume()
+11-13 17:27:35.405  7489  7489 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Executing ReactInstanceEventListeners
+11-13 17:27:35.418  7489  7515 E ReactNativeJS: [runtime not ready]: Error: Intentional module-scope error in a broken update
+11-13 17:27:35.421  7489  7515 W unknown:BridgelessReact: ReactHost{0}.handleHostException(message = "[runtime not ready]: Error: Intentional module-scope error in a broken update, stack:
+11-13 17:27:35.422  7489  7515 E dev.expo.updates: ErrorRecovery: exception encountered: [runtime not ready]: Error: Intentional module-scope error in a broken update, stack:\nanonymous@3427:19\nloadModuleImplementation@208:15\nguardedLoadModule@129:46\nmetroR
+11-13 17:27:35.423  7489  7515 I ReactNativeJS: Running "main"
+11-13 17:27:35.424  7489  7515 E ReactNativeJS: [runtime not ready]: Invariant Violation: "main" has not been registered. This can happen if:
+11-13 17:27:35.424  7489  7515 E ReactNativeJS: * Metro (the local dev server) is run from the wrong folder. Check if Metro is running, stop it and restart it in the current project.
+11-13 17:27:35.424  7489  7515 E ReactNativeJS: * A module failed to load due to an error and `AppRegistry.registerComponent` wasn't called.
+11-13 17:27:35.425  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask()
+11-13 17:27:35.425  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask(): Resetting createReactInstance task ref
+11-13 17:27:35.426  7489  7512 I dev.expo.updates: UpdatesErrorRecovery: attempting to fetch a new update, waiting
+11-13 17:27:35.436  7489  7511 I dev.expo.updates: ErrorRecovery: remote load status changed: IDLE
+11-13 17:27:35.437  7489  7512 I dev.expo.updates: UpdatesErrorRecovery: falling back to older update
+11-13 17:27:35.487  7489  7513 I dev.expo.updates: Updates state change: Restart
+11-13 17:27:35.490  7489  7513 I dev.expo.updates: Updates state change: reset
+11-13 17:27:35.666  7489  7489 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask(): Starting React Native destruction
+11-13 17:27:35.666  7489  7489 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask(): Move ReactHost to onHostDestroy()
+11-13 17:27:35.666  7489  7489 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostPause()
+11-13 17:27:35.666  7489  7489 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostDestroy()
+11-13 17:27:35.676  7489  7489 W unknown:BridgelessReact: ReactHost{0}.onHostResume(activity)
+11-13 17:27:35.676  7489  7489 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostResume()
+11-13 17:27:35.702  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask(): Stopping all React Native surfaces
+11-13 17:27:35.703  7489  7514 W unknown:BridgelessReact: ReactHost{0}.reload(): Waiting for destroy to finish, before reloading React Native.
+11-13 17:27:35.726  7489  7489 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask(): Destroying MemoryPressureRouter
+11-13 17:27:35.726  7489  7489 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask(): Resetting ReactContext ref
+11-13 17:27:35.726  7489  7489 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask(): Destroying ReactContext
+11-13 17:27:35.726  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask(): Resetting ReactInstance ptr
+11-13 17:27:35.726  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask(): Destroying ReactInstance
+11-13 17:27:35.739  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask(): Resetting start/destroy task ref
+11-13 17:27:35.739  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask()
+11-13 17:27:35.739  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting createReactInstance task ref
+11-13 17:27:35.798  7489  7489 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Starting React Native reload
+11-13 17:27:35.799  7489  7489 W unknown:BridgelessReact: ReactHost{0}.raiseSoftException(getOrCreateReloadTask()): Reload: ReactInstance task returned null. Stage: 1: Starting reload. Reload reason: Restart from RelaunchProcedure
+11-13 17:27:35.799  7489  7489 E unknown:ReactHost: Unhandled SoftException
+11-13 17:27:35.799  7489  7489 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(getOrCreateReloadTask()): Reload: ReactInstance task returned null. Stage: 1: Starting reload. Reload reason: Restart from RelaunchProce
+11-13 17:27:35.802  7489  7489 W unknown:BridgelessReact: ReactHost{0}.raiseSoftException(getOrCreateReloadTask()): ReactContext is null. Reload reason: Restart from RelaunchProcedure
+11-13 17:27:35.803  7489  7489 E unknown:ReactHost: Unhandled SoftException
+11-13 17:27:35.803  7489  7489 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(getOrCreateReloadTask()): ReactContext is null. Reload reason: Restart from RelaunchProcedure
+11-13 17:27:35.829  7489  7514 W unknown:BridgelessReact: ReactHost{0}.raiseSoftException(getOrCreateReloadTask()): Reload: ReactInstance task returned null. Stage: 2: Surface shutdown. Reload reason: Restart from RelaunchProcedure
+11-13 17:27:35.835  7489  7514 E unknown:ReactHost: Unhandled SoftException
+11-13 17:27:35.835  7489  7514 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(getOrCreateReloadTask()): Reload: ReactInstance task returned null. Stage: 2: Surface shutdown. Reload reason: Restart from RelaunchProc
+11-13 17:27:35.835  7489  7514 W unknown:BridgelessReact: ReactHost{0}.raiseSoftException(getOrCreateReloadTask()): Skipping surface shutdown: ReactInstance null
+11-13 17:27:35.835  7489  7514 E unknown:ReactHost: Unhandled SoftException
+11-13 17:27:35.835  7489  7514 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(getOrCreateReloadTask()): Skipping surface shutdown: ReactInstance null
+11-13 17:27:35.836  7489  7489 W unknown:BridgelessReact: ReactHost{0}.raiseSoftException(getOrCreateReloadTask()): Reload: ReactInstance task returned null. Stage: 3: Destroying ReactContext. Reload reason: Restart from RelaunchProcedure
+11-13 17:27:35.836  7489  7489 E unknown:ReactHost: Unhandled SoftException
+11-13 17:27:35.836  7489  7489 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(getOrCreateReloadTask()): Reload: ReactInstance task returned null. Stage: 3: Destroying ReactContext. Reload reason: Restart from Relau
+11-13 17:27:35.836  7489  7489 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Removing memory pressure listener
+11-13 17:27:35.836  7489  7514 W unknown:BridgelessReact: ReactHost{0}.raiseSoftException(getOrCreateReloadTask()): Reload: ReactInstance task returned null. Stage: 4: Destroying ReactInstance. Reload reason: Restart from RelaunchProcedure
+11-13 17:27:35.853  7489  7514 E unknown:ReactHost: Unhandled SoftException
+11-13 17:27:35.853  7489  7514 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(getOrCreateReloadTask()): Reload: ReactInstance task returned null. Stage: 4: Destroying ReactInstance. Reload reason: Restart from Rela
+11-13 17:27:35.853  7489  7514 W unknown:BridgelessReact: ReactHost{0}.raiseSoftException(getOrCreateReloadTask()): Skipping ReactInstance.destroy(): ReactInstance null
+11-13 17:27:35.853  7489  7514 E unknown:ReactHost: Unhandled SoftException
+11-13 17:27:35.853  7489  7514 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(getOrCreateReloadTask()): Skipping ReactInstance.destroy(): ReactInstance null
+11-13 17:27:35.853  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting start task ref
+11-13 17:27:35.853  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask()
+11-13 17:27:35.853  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Start
+11-13 17:27:35.853  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getJSBundleLoader()
+11-13 17:27:35.853  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating BridgelessReactContext
+11-13 17:27:35.853  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating ReactInstance
+11-13 17:27:35.882  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Loading JS Bundle
+11-13 17:27:35.882  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): DevSupportManager.onNewReactContextCreated()
+11-13 17:27:35.883  7489  7489 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostResume()
+11-13 17:27:35.883  7489  7489 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Executing ReactInstanceEventListeners
+11-13 17:27:35.883  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Restarting previously running React Native Surfaces
+11-13 17:27:35.883  7489  7514 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting reload task ref
+11-13 17:27:52.235  7718  7736 I dev.expo.updates: Updates state change: StartStartup
+11-13 17:27:52.250  7718  7718 W unknown:BridgelessReact: ReactHost{0}.startSurface(surfaceId = 0): Schedule
+11-13 17:27:52.250  7718  7718 W unknown:BridgelessReact: ReactHost{0}.attachSurface(surfaceId = 0)
+11-13 17:27:52.296  7718  7736 I dev.expo.updates: Updates state change: Check
+11-13 17:27:52.301  7718  7743 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask()
+11-13 17:27:52.301  7718  7743 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Start
+11-13 17:27:52.301  7718  7743 W unknown:BridgelessReact: ReactHost{0}.getJSBundleLoader()
+11-13 17:27:52.302  7718  7743 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating BridgelessReactContext
+11-13 17:27:52.302  7718  7743 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating ReactInstance
+11-13 17:27:52.319  7718  7718 W unknown:BridgelessReact: ReactHost{0}.onHostResume(activity)
+11-13 17:27:52.326  7718  7718 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostResume()
+11-13 17:27:52.428  7718  7736 I dev.expo.updates: Updates state change: CheckCompleteAvailable
+11-13 17:27:52.428  7718  7736 I dev.expo.updates: Updates state change: Download
+11-13 17:27:52.429  7718  7736 I dev.expo.updates: Updates state change: DownloadCompleteWithUpdate
+11-13 17:27:52.429  7718  7736 I dev.expo.updates: ErrorRecovery: remote load status changed: NEW_UPDATE_LOADED
+11-13 17:27:52.430  7718  7736 I dev.expo.updates: Updates state change: EndStartup
+11-13 17:27:52.445  7718  7743 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Loading JS Bundle
+11-13 17:27:52.446  7718  7743 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): DevSupportManager.onNewReactContextCreated()
+11-13 17:27:52.453  7718  7743 W unknown:BridgelessReact: ReactHost{0}.startSurface(surfaceId = 0): Execute
+11-13 17:27:52.496  7718  7744 I ReactNativeJS: Running "main"
+11-13 17:27:52.571  7718  7718 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostResume()
+11-13 17:27:52.572  7718  7718 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Executing ReactInstanceEventListeners

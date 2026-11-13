@@ -1,0 +1,30 @@
+--- a/packages/expo-updates/android/src/main/java/expo/modules/updates/procedures/RestartReactAppExtensions.kt	2026-11-13 17:38:16
++++ b/packages/expo-updates/android/src/main/java/expo/modules/updates/procedures/RestartReactAppExtensions.kt	2026-11-13 17:38:16
+@@ -8,6 +8,7 @@
+ import expo.modules.updates.UpdatesController
+ import java.util.concurrent.TimeUnit
+ import kotlin.concurrent.thread
++import android.util.Log
+ 
+ /**
+  * Resolve a [ReactHost] to reload, in order of preference:
+@@ -34,6 +35,7 @@
+   // older update). Once such a reload has completed, recreate the activity so that it starts a
+   // new surface on the reloaded instance.
+   val hostWasDestroyed = currentReactContext == null
++  Log.w("Pr50943Diag", "restart(): hostWasDestroyed=$hostWasDestroyed activity=$activity lifecycleState=$lifecycleState")
+   if (lifecycleState != LifecycleState.RESUMED && activity != null) {
+     onHostResume(activity)
+   }
+@@ -41,7 +43,10 @@
+   if (hostWasDestroyed && activity != null) {
+     thread(name = "expo-updates-restart") {
+       // A failed reload destroys the host again; error recovery then continues as before.
+-      if (reloadTask.waitForCompletion(30, TimeUnit.SECONDS) && currentReactContext != null) {
++      val completed = reloadTask.waitForCompletion(30, TimeUnit.SECONDS)
++      Log.w("Pr50943Diag", "reload completed=$completed currentReactContext=$currentReactContext")
++      if (completed && currentReactContext != null) {
++        Log.w("Pr50943Diag", "recreating $activity")
+         activity.runOnUiThread {
+           if (!activity.isFinishing && !activity.isDestroyed) {
+             activity.recreate()

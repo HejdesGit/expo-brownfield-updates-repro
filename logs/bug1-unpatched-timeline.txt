@@ -1,0 +1,7 @@
+0s update A running
+4s publishing broken update B on the server
+10s cold start: A runs, B downloads
+19s cold start: B throws, error recovery falls back to A
+31s blank surface, process alive: pid 7489
+36s cold start: A again
+45s end

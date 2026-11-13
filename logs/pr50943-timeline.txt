@@ -1,0 +1,6 @@
+0s update A running
+4s publishing broken update B
+10s cold start: A runs, B downloads
+18s cold start: B throws, error recovery falls back
+33s after rollback: pid 9049
+37s end

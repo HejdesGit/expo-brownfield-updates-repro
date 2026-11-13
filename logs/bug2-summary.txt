@@ -1,0 +1,37 @@
+== default-ndk-unpatched ()
+expo-updates AAR native libs:
+  jni/arm64-v8a/libc++_shared.so
+  jni/arm64-v8a/libexpo-updates.so
+  jni/arm64-v8a/libfbjni.so
+md5 of jni/arm64-v8a/libc++_shared.so in the AAR: d8f40d6fe4476f2d4f8dcce599a37886
+host assembleRelease: SUCCESS
+
+== ndk27.0-unpatched (NDK_VERSION=27.0.12077973)
+expo-updates AAR native libs:
+  jni/arm64-v8a/libc++_shared.so
+  jni/arm64-v8a/libexpo-updates.so
+  jni/arm64-v8a/libfbjni.so
+md5 of jni/arm64-v8a/libc++_shared.so in the AAR: cd848a444f515595be765930c8cd3841
+host assembleRelease: FAILED
+* What went wrong:
+Execution failed for task ':app:mergeReleaseNativeLibs'.
+> A failure occurred while executing com.android.build.gradle.internal.tasks.MergeNativeLibsTask$MergeNativeLibsTaskWorkAction
+   > 2 files found with path 'lib/arm64-v8a/libc++_shared.so' from inputs:
+      - ~/.gradle/caches/9.4.1/transforms/bfb1e74173956832b80930b7feb517f3/transformed/expo.modules.updates-58.0.22/jni/arm64-v8a/libc++_shared.so
+      - ~/.gradle/caches/9.4.1/transforms/78628762a780a3bf1a656f90e053df23/transformed/react-android-0.88.1-release/jni/arm64-v8a/libc++_shared.so
+     If you are using jniLibs and CMake IMPORTED targets, see
+     https://developer.android.com/r/tools/jniLibs-vs-imported-targets
+
+* Try:
+
+== ndk27.0-pickfirst-removed (NDK_VERSION=27.0.12077973 SO_FIX=1)
+expo-updates AAR native libs:
+  jni/arm64-v8a/libexpo-updates.so
+host assembleRelease: SUCCESS
+
+== ndk27.0-pickfirst-androidtest-only (NDK_VERSION=27.0.12077973 SO_FIX=2)
+expo-updates AAR native libs:
+  jni/arm64-v8a/libexpo-updates.so
+host assembleRelease: SUCCESS
+
+react-android 0.88.1 libc++_shared.so md5: d8f40d6fe4476f2d4f8dcce599a37886

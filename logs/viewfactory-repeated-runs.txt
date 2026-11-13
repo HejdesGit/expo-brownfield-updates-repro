@@ -1,0 +1,7 @@
+# VIEWFACTORY_FIX=1 (unpatched expo-updates), scripts/run-rollback.sh
+main#1 restart logged -> RECOVERED
+docs#1 restart logged -> RECOVERED
+main#2 restart logged -> RECOVERED
+docs#2 restart logged -> RECOVERED
+main#3 restart logged -> RECOVERED
+docs#3 restart logged -> RECOVERED
