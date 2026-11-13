@@ -37,8 +37,8 @@ for f in "${PATCHED_FILES[@]}"; do
 done
 apply_patch() { (cd "$UPDATES" && patch -p3 -s --forward < "$1"); echo "applied $(basename "$1")"; }
 
-[[ "${PR_50943:-0}" == 1 ]] && apply_patch "$ROOT/fixes/pr-50943/expo-updates-restart.patch"
-[[ "${PR_50943:-0}" == 1 && "${PR_50943_DIAG:-0}" == 1 ]] && apply_patch "$ROOT/fixes/pr-50943/diagnostic-logging.patch"
+[[ "${PR_50943:-1}" == 1 ]] && apply_patch "$ROOT/fixes/pr-50943/expo-updates-restart.patch"
+[[ "${PR_50943:-1}" == 1 && "${PR_50943_DIAG:-0}" == 1 ]] && apply_patch "$ROOT/fixes/pr-50943/diagnostic-logging.patch"
 [[ "${SO_FIX:-0}" == 1 ]] && apply_patch "$ROOT/fixes/so-pickfirst/expo-updates-build-gradle.patch"
 [[ "${SO_FIX:-0}" == 2 ]] && apply_patch "$ROOT/fixes/so-pickfirst/expo-updates-build-gradle-androidtest-only.patch"
 true
@@ -52,4 +52,4 @@ if [[ "${VIEWFACTORY_FIX:-0}" == 1 ]]; then
 fi
 
 npx expo-brownfield build:android --release --verbose
-echo "Published dev.repro:brownfield:1.0.0 (PR_50943=${PR_50943:-0} VIEWFACTORY_FIX=${VIEWFACTORY_FIX:-0} SO_FIX=${SO_FIX:-0} PR_50943_DIAG=${PR_50943_DIAG:-0} NDK_VERSION=${NDK_VERSION:-default})"
+echo "Published dev.repro:brownfield:1.0.0 (PR_50943=${PR_50943:-1} VIEWFACTORY_FIX=${VIEWFACTORY_FIX:-0} SO_FIX=${SO_FIX:-0} PR_50943_DIAG=${PR_50943_DIAG:-0} NDK_VERSION=${NDK_VERSION:-default})"
