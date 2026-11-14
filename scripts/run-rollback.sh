@@ -1,7 +1,15 @@
 #!/usr/bin/env bash
-# Runs the rollback scenario once and reports whether the embedded surface came back in the
-# same process. Usage: scripts/run-rollback.sh <apk> <agent-device command> <adb serial> [deep link]
-# Prints: RECOVERED or BLANK, plus the pid. Raw logcat goes to $LOGCAT_OUT (default /tmp/rollback-raw.txt).
+# Runs the rollback scenario once and classifies the result from logcat.
+# Usage: scripts/run-rollback.sh <apk> <agent-device command> <adb serial> [deep link]
+#
+# Prints one line: RECOVERED, BLANK or INVALID, plus the pid and (for RECOVERED) the time from the
+# crash to the next `Running "main"` in the same process.
+#   RECOVERED  B threw, expo-updates fell back, the host reloaded, and `Running "main"` followed in
+#              the same pid, from the fallback bundle (not B's failing run).
+#   BLANK      the same sequence, but no `Running "main"` after the reload in that pid.
+#   INVALID    the sequence did not happen as expected (B not launched, no fallback, process died).
+# Logcat of the app's processes goes to $LOGCAT_OUT (default /tmp/rollback-raw.txt); a screenshot of the final screen
+# goes to $SHOT_OUT if set.
 set -euo pipefail
 APK="$1"; AD="$2"; S="$3"; URL="${4:-}"
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
@@ -13,10 +21,11 @@ cs; sleep 6                       # A runs, B downloads
 adb -s "$S" logcat -c
 cs; sleep 12                      # B throws, error recovery falls back to A
 PID="$(adb -s "$S" shell pidof dev.repro.host || true)"
-adb -s "$S" logcat -d > "$OUT"
-# Did "Running \"main\"" happen in this pid after the reload restarted surfaces?
-if awk -v pid="$PID" '$3==pid && /Restarting previously running React Native Surfaces/ {r=1} r && $3==pid && /Running "main"/ {f=1} END {exit !f}' "$OUT"; then
-  echo "RECOVERED pid=$PID"
-else
-  echo "BLANK pid=$PID"
-fi
+# Keep only lines from the app's own processes; system lines can name other installed apps.
+adb -s "$S" logcat -d | awk '
+  { lines[NR] = $0; pid[NR] = $3 }
+  /BridgelessReact|ReactNativeJS|dev\.expo\.updates|BrownfieldSurface/ { app[$3] = 1 }
+  END { for (i = 1; i <= NR; i++) if (pid[i] in app) print lines[i] }' > "$OUT"
+if [ -n "${SHOT_OUT:-}" ]; then "$AD" screenshot "$SHOT_OUT" >/dev/null || true; fi
+
+"$ROOT/scripts/classify-rollback.sh" "$PID" "$OUT"
