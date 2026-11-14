@@ -1,0 +1,13 @@
+# expo/expo#50943 (PR_50943=1) + fixes/viewfactory (VIEWFACTORY_FIX=1), same build, release AAR
+# Each run: scripts/run-rollback.sh, then 'Show alert' tapped via agent-device.
+# relaunch = 'Schedule relaunch activity' lines (the PR's activity.recreate()); activityRestored = 'restarted; hasCurrentActivity=true'
+main#1 RECOVERED pid=13185 crash=16:41:37.779 main=16:41:38.328 after=0.549s relaunch=0 brownfieldLines=2 activityRestored=1 alert=shown
+docs#1 RECOVERED pid=13795 crash=16:42:27.989 main=16:42:28.275 after=0.286s relaunch=0 brownfieldLines=2 activityRestored=1 alert=shown
+main#2 RECOVERED pid=14453 crash=16:43:16.397 main=16:43:16.765 after=0.368s relaunch=0 brownfieldLines=2 activityRestored=1 alert=shown
+docs#2 RECOVERED pid=15039 crash=16:44:04.700 main=16:44:04.974 after=0.274s relaunch=0 brownfieldLines=2 activityRestored=1 alert=shown
+main#3 RECOVERED pid=15681 crash=16:44:52.612 main=16:44:53.084 after=0.472s relaunch=0 brownfieldLines=2 activityRestored=1 alert=shown
+docs#3 RECOVERED pid=16246 crash=16:45:41.090 main=16:45:41.471 after=0.381s relaunch=0 brownfieldLines=2 activityRestored=1 alert=shown
+main#4 RECOVERED pid=16853 crash=16:46:29.708 main=16:46:30.121 after=0.413s relaunch=0 brownfieldLines=2 activityRestored=1 alert=shown
+docs#4 RECOVERED pid=17407 crash=16:47:17.549 main=16:47:17.774 after=0.225s relaunch=0 brownfieldLines=2 activityRestored=1 alert=shown
+main#5 RECOVERED pid=18032 crash=16:48:04.570 main=16:48:04.992 after=0.422s relaunch=0 brownfieldLines=2 activityRestored=1 alert=shown
+docs#5 RECOVERED pid=18587 crash=16:48:51.962 main=16:48:52.153 after=0.191s relaunch=0 brownfieldLines=2 activityRestored=1 alert=shown
