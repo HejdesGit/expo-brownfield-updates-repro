@@ -1,0 +1,49 @@
+# VIEWFACTORY_FIX=1, MainActivity, pid 25196: after a rollback that this fix recovered, tapped 'Show alert' (dialog shown),
+# then 'Reload' (Updates.reloadAsync) three times. Relevant lines from logcat; no BrownfieldSurface lines appear,
+# so the fix stays out of ordinary reloads and React Native restarts the surface itself each time.
+
+11-14 15:29:22.357 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask()
+11-14 15:29:22.357 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting createReactInstance task ref
+11-14 15:29:22.358 25196 25196 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Starting React Native reload
+11-14 15:29:22.358 25196 25196 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Calling ReactContext.onHostPause()
+11-14 15:29:22.358 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Stopping all React Native surfaces
+11-14 15:29:22.365 25196 25196 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Removing memory pressure listener
+11-14 15:29:22.365 25196 25196 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting ReactContext ref
+11-14 15:29:22.365 25196 25196 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Destroying ReactContext
+11-14 15:29:22.366 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting ReactInstance ptr
+11-14 15:29:22.366 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Destroying ReactInstance
+11-14 15:29:22.368 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting start task ref
+11-14 15:29:22.372 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Restarting previously running React Native Surfaces
+11-14 15:29:22.372 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting reload task ref
+11-14 15:29:22.381 25196 25468 I ReactNativeJS: Running "main"
+11-14 15:29:22.382 25196 25196 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostResume()
+11-14 15:29:27.037 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask()
+11-14 15:29:27.037 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting createReactInstance task ref
+11-14 15:29:27.048 25196 25196 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Starting React Native reload
+11-14 15:29:27.048 25196 25196 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Calling ReactContext.onHostPause()
+11-14 15:29:27.048 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Stopping all React Native surfaces
+11-14 15:29:27.065 25196 25196 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Removing memory pressure listener
+11-14 15:29:27.065 25196 25196 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting ReactContext ref
+11-14 15:29:27.065 25196 25196 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Destroying ReactContext
+11-14 15:29:27.065 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting ReactInstance ptr
+11-14 15:29:27.065 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Destroying ReactInstance
+11-14 15:29:27.067 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting start task ref
+11-14 15:29:27.075 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Restarting previously running React Native Surfaces
+11-14 15:29:27.075 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting reload task ref
+11-14 15:29:27.083 25196 25196 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostResume()
+11-14 15:29:27.093 25196 25494 I ReactNativeJS: Running "main"
+11-14 15:29:31.721 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask()
+11-14 15:29:31.721 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting createReactInstance task ref
+11-14 15:29:31.731 25196 25196 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Starting React Native reload
+11-14 15:29:31.731 25196 25196 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Calling ReactContext.onHostPause()
+11-14 15:29:31.731 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Stopping all React Native surfaces
+11-14 15:29:31.748 25196 25196 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Removing memory pressure listener
+11-14 15:29:31.748 25196 25196 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting ReactContext ref
+11-14 15:29:31.748 25196 25196 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Destroying ReactContext
+11-14 15:29:31.748 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting ReactInstance ptr
+11-14 15:29:31.748 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Destroying ReactInstance
+11-14 15:29:31.759 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting start task ref
+11-14 15:29:31.765 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Restarting previously running React Native Surfaces
+11-14 15:29:31.765 25196 25221 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting reload task ref
+11-14 15:29:31.765 25196 25196 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostResume()
+11-14 15:29:31.777 25196 25523 I ReactNativeJS: Running "main"
