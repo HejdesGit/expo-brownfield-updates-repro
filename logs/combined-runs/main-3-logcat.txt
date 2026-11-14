@@ -1,0 +1,345 @@
+11-14 16:44:52.369 15681 15681 I libprocessgroup: Created cgroup /sys/fs/cgroup/apps/uid_10291/pid_15681
+11-14 16:44:52.371 15681 15681 I Zygote  : Process 15681 created for dev.repro.host
+11-14 16:44:52.373 15681 15681 I dev.repro.host: Using generational CollectorTypeCMC GC.
+11-14 16:44:52.375 15681 15681 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+11-14 16:44:52.386 15681 15681 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+11-14 16:44:52.387 15681 15681 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+11-14 16:44:52.391 15681 15681 D nativeloader: Configuring clns-9 for other apk /data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/lib/arm64:/data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/dev.repro.host
+11-14 16:44:52.392 15681 15681 V GraphicsEnvironment: Currently set values for:
+11-14 16:44:52.392 15681 15681 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-14 16:44:52.393 15681 15681 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-14 16:44:52.393 15681 15681 V GraphicsEnvironment: dev.repro.host is not listed in per-application setting
+11-14 16:44:52.394 15681 15681 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+11-14 16:44:52.394 15681 15681 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-14 16:44:52.457 15681 15696 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+11-14 16:44:52.473 15681 15681 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+11-14 16:44:52.478 15681 15696 I GFXSTREAM: [eglDisplay.cpp(297)] Opening libGLESv1_CM_emulation.so
+11-14 16:44:52.478 15681 15681 W SoLoader: Initializing SoLoader: 0
+11-14 16:44:52.478 15681 15681 W SoLoader: Recording new base apk path: /data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/base.apk
+11-14 16:44:52.478 15681 15681 W SoLoader: Previously recorded 0 base apk paths.
+11-14 16:44:52.478 15681 15681 I SoLoader: Preparing SO source: DirectorySoSource[root = /vendor/lib64 flags = 2]
+11-14 16:44:52.478 15681 15696 I GFXSTREAM: [eglDisplay.cpp(297)] Opening libGLESv2_emulation.so
+11-14 16:44:52.478 15681 15681 I SoLoader: Preparing SO source: DirectorySoSource[root = /system/lib64 flags = 2]
+11-14 16:44:52.478 15681 15681 I SoLoader: Preparing SO source: DirectApkSoSource[root = [/data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/base.apk!/lib/arm64-v8a]]
+11-14 16:44:52.479 15681 15681 I SoLoader: Preparing SO source: ApplicationSoSource[DirectorySoSource[root = /data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/lib/arm64 flags = 0]]
+11-14 16:44:52.479 15681 15681 I SoLoader: init finish: 4 SO sources prepared
+11-14 16:44:52.479 15681 15681 W SoLoader: SoLoader initialized: 8
+11-14 16:44:52.483 15681 15696 W libc    : Access denied finding property "vendor.mesa.virtgpu.kumquat"
+11-14 16:44:52.485 15681 15681 D nativeloader: Load /data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/base.apk!/lib/arm64-v8a/libc++_shared.so using class loader ns clns-9 (caller=/data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/base.apk): ok
+11-14 16:44:52.485 15681 15681 D nativeloader: Load /data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/base.apk!/lib/arm64-v8a/libjsi.so using class loader ns clns-9 (caller=/data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/base.apk): ok
+11-14 16:44:52.485 15681 15696 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+11-14 16:44:52.486 15681 15696 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+11-14 16:44:52.486 15681 15681 D nativeloader: Load /data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/base.apk!/lib/arm64-v8a/libfbjni.so using class loader ns clns-9 (caller=/data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/base.apk): ok
+11-14 16:44:52.487 15681 15681 D nativeloader: Load /data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/base.apk!/lib/arm64-v8a/libreactnative.so using class loader ns clns-9 (caller=/data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/base.apk): ok
+11-14 16:44:52.487 15681 15681 D jni_lib_merge: Entering merged library JNI_OnLoad.
+11-14 16:44:52.487 15681 15681 D jni_lib_merge: Preparing 13 pre-merged libs (including stub)
+11-14 16:44:52.487 15681 15681 D jni_lib_merge: Preparing to register libfabricjni_so.  onload_func: 0x7816bbf9ee9c
+11-14 16:44:52.487 15681 15681 D jni_lib_merge: Preparing to register libreact_devsupportjni_so.  onload_func: 0x7816bc07b2a8
+11-14 16:44:52.487 15681 15681 D jni_lib_merge: Preparing to register libreact_featureflagsjni_so.  onload_func: 0x7816bc0955e0
+11-14 16:44:52.487 15681 15681 D jni_lib_merge: Preparing to register libreact_newarchdefaults_so.  onload_func: 0x7816bc0dbba0
+11-14 16:44:52.487 15681 15681 D jni_lib_merge: Preparing to register libreact_tracingjni_so.  onload_func: 0x7816bc1ca5e8
+11-14 16:44:52.487 15681 15681 D jni_lib_merge: Preparing to register libreactnativeblob_so.  onload_func: 0x7816bc1cf87c
+11-14 16:44:52.487 15681 15681 D jni_lib_merge: Preparing to register libreactnativejni_so.  onload_func: 0x7816bc1db910
+11-14 16:44:52.487 15681 15681 D jni_lib_merge: Preparing to register libreactnativejni_common_so.  onload_func: 0x7816bc1e0148
+11-14 16:44:52.487 15681 15681 D jni_lib_merge: Preparing to register librninstance_so.  onload_func: 0x7816bc20569c
+11-14 16:44:52.487 15681 15681 D jni_lib_merge: Preparing to register libturbomodulejsijni_so.  onload_func: 0x7816bc29b3cc
+11-14 16:44:52.487 15681 15681 D jni_lib_merge: Preparing to register libuimanagerjni_so.  onload_func: 0x7816bc2a1dd8
+11-14 16:44:52.487 15681 15681 D jni_lib_merge: Preparing to register libyoga_so.  onload_func: 0x7816bc2a9854
+11-14 16:44:52.487 15681 15681 D jni_lib_merge: About to register 12 actual methods.
+11-14 16:44:52.489 15681 15681 D nativeloader: Load /data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/base.apk!/lib/arm64-v8a/libappmodules.so using class loader ns clns-9 (caller=/data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/base.apk): ok
+11-14 16:44:52.492 15681 15681 D nativeloader: Load /data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/base.apk!/lib/arm64-v8a/libhermesvm.so using class loader ns clns-9 (caller=/data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/base.apk): ok
+11-14 16:44:52.492 15681 15681 D nativeloader: Load /data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/base.apk!/lib/arm64-v8a/libhermestooling.so using class loader ns clns-9 (caller=/data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/base.apk): ok
+11-14 16:44:52.492 15681 15681 D jni_lib_merge: Entering merged library JNI_OnLoad.
+11-14 16:44:52.492 15681 15681 D jni_lib_merge: Preparing 4 pre-merged libs (including stub)
+11-14 16:44:52.492 15681 15681 D jni_lib_merge: Preparing to register libhermes_executor_so.  onload_func: 0x78179a167dac
+11-14 16:44:52.492 15681 15681 D jni_lib_merge: Preparing to register libhermesinstancejni_so.  onload_func: 0x78179a16f440
+11-14 16:44:52.492 15681 15681 D jni_lib_merge: Preparing to register libjsijniprofiler_so.  onload_func: 0x78179a16fce8
+11-14 16:44:52.492 15681 15681 D jni_lib_merge: About to register 3 actual methods.
+11-14 16:44:52.505 15681 15681 D CompatChangeReporter: Compat change id reported: 377864165; UID 10291; state: ENABLED
+11-14 16:44:52.506 15681 15704 I dev.expo.updates: {"timestamp":1794671092506,"message":"Updates state change: StartStartup, context = {isStartupProcedureRunning=true, isUpdateAvailable=false, isUpdatePending=false, isChecking=false, isDownloading=false, isRestarting=false, restartCount=0, downloadProgress=0.0, sequenceNumber=1}","code":"None","level":"info"}
+11-14 16:44:52.510 15681 15681 W unknown:BridgelessReact: ReactHost{0}.startSurface(surfaceId = 0): Schedule
+11-14 16:44:52.510 15681 15681 W unknown:BridgelessReact: ReactHost{0}.attachSurface(surfaceId = 0)
+11-14 16:44:52.511 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask()
+11-14 16:44:52.511 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Start
+11-14 16:44:52.511 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getJSBundleLoader()
+11-14 16:44:52.518 15681 15681 W unknown:BridgelessReact: ReactHost{0}.onHostResume(activity)
+11-14 16:44:52.518 15681 15704 I dev.expo.updates: {"timestamp":1794671092518,"message":"embeddedAssetFileMap: embeddedAssets count = 1","code":"None","level":"info"}
+11-14 16:44:52.518 15681 15704 I dev.expo.updates: {"timestamp":1794671092518,"message":"Updates state change: Check, context = {isStartupProcedureRunning=true, isUpdateAvailable=false, isUpdatePending=false, isChecking=true, isDownloading=false, isRestarting=false, restartCount=0, downloadProgress=0.0, sequenceNumber=2}","code":"None","level":"info"}
+11-14 16:44:52.531 15681 15681 W HWUI    : Unknown dataspace 0
+11-14 16:44:52.538 15681 15711 W libc    : Access denied finding property "vendor.mesa.virtgpu.kumquat"
+11-14 16:44:52.542 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating BridgelessReactContext
+11-14 16:44:52.542 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating ReactInstance
+11-14 16:44:52.578 15681 15707 I ExpoModulesCore: ✅ AppContext was initialized
+11-14 16:44:52.580 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Loading JS Bundle
+11-14 16:44:52.580 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): DevSupportManager.onNewReactContextCreated()
+11-14 16:44:52.580 15681 15707 W unknown:BridgelessReact: ReactHost{0}.startSurface(surfaceId = 0): Execute
+11-14 16:44:52.582 15681 15704 I dev.expo.updates: {"timestamp":1794671092582,"message":"Updates state change: CheckCompleteUnavailable, context = {isStartupProcedureRunning=true, isUpdateAvailable=false, isUpdatePending=false, isChecking=false, isDownloading=false, isRestarting=false, restartCount=0, downloadProgress=0.0, sequenceNumber=3, lastCheckForUpdateTime=Sat Nov 14 16:44:52 GMT+01:00 2026}","code":"None","level":"info"}
+11-14 16:44:52.582 15681 15704 I dev.expo.updates: {"timestamp":1794671092582,"message":"embeddedAssetFileMap: embeddedAssets count = 1","code":"None","level":"info"}
+11-14 16:44:52.582 15681 15704 I dev.expo.updates: {"timestamp":1794671092582,"message":"UpdatesController onBackgroundUpdateFinished: No update available","code":"NoUpdatesAvailable","level":"info"}
+11-14 16:44:52.582 15681 15704 I dev.expo.updates: {"timestamp":1794671092582,"message":"ErrorRecovery: remote load status changed: IDLE","code":"None","level":"info"}
+11-14 16:44:52.585 15681 15704 I dev.expo.updates: {"timestamp":1794671092585,"message":"Updates state change: EndStartup, context = {isStartupProcedureRunning=false, isUpdateAvailable=false, isUpdatePending=false, isChecking=false, isDownloading=false, isRestarting=false, restartCount=0, downloadProgress=0.0, sequenceNumber=4, lastCheckForUpdateTime=Sat Nov 14 16:44:52 GMT+01:00 2026}","code":"None","level":"info"}
+11-14 16:44:52.595 15681 15717 D nativeloader: Load /data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/base.apk!/lib/arm64-v8a/libexpo-modules-jsi.so using class loader ns clns-9 (caller=/data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/base.apk): ok
+11-14 16:44:52.595 15681 15717 D nativeloader: Load /data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/base.apk!/lib/arm64-v8a/libexpo-modules-core.so using class loader ns clns-9 (caller=/data/app/~~1F4IrL3xXbkf-nN2DsrtFw==/dev.repro.host-si9Y_arEYmL_YD4ObRakDg==/base.apk): ok
+11-14 16:44:52.595 15681 15717 W BridgelessReactContext: [WARNING] Bridgeless doesn't support CatalystInstance. Accessing an API that's not part of the new architecture is not encouraged usage.
+11-14 16:44:52.601 15681 15717 I ExpoModulesCore: ✅ JSI interop was installed
+11-14 16:44:52.602 15681 15717 I ExpoModulesCore: ✅ Constants were exported
+11-14 16:44:52.603 15681 15717 I dev.expo.updates: {"timestamp":1794671092603,"message":"UpdatesModule: getConstants called","code":"None","level":"info"}
+11-14 16:44:52.604 15681 15717 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class expo.modules.kotlin.views.GroupViewManagerWrapper
+11-14 16:44:52.604 15681 15717 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.uimanager.LayoutShadowNode
+11-14 16:44:52.605 15681 15717 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.safeareaview.ReactSafeAreaViewManager
+11-14 16:44:52.605 15681 15717 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ReactModalHostManager
+11-14 16:44:52.606 15681 15717 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ReactProgressBarViewManager
+11-14 16:44:52.606 15681 15717 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollViewManager
+11-14 16:44:52.606 15681 15717 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.image.ReactImageManager
+11-14 16:44:52.607 15681 15717 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextViewManager
+11-14 16:44:52.607 15681 15717 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollContainerViewManager
+11-14 16:44:52.608 15681 15717 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.unimplementedview.ReactUnimplementedViewManager
+11-14 16:44:52.608 15681 15717 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactScrollViewManager
+11-14 16:44:52.608 15681 15717 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.view.ReactViewManager
+11-14 16:44:52.609 15681 15717 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.drawer.ReactDrawerLayoutManager
+11-14 16:44:52.609 15681 15717 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager
+11-14 16:44:52.609 15681 15717 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.swiperefresh.SwipeRefreshLayoutManager
+11-14 16:44:52.610 15681 15717 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputManager
+11-14 16:44:52.610 15681 15717 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.SelectableTextViewManager
+11-14 16:44:52.610 15681 15717 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.virtual.view.ReactVirtualViewManager
+11-14 16:44:52.612 15681 15717 E ReactNativeJS: [runtime not ready]: Error: Intentional module-scope error in a broken update
+11-14 16:44:52.613 15681 15717 W unknown:BridgelessReact: ReactHost{0}.handleHostException(message = "[runtime not ready]: Error: Intentional module-scope error in a broken update, stack:
+11-14 16:44:52.613 15681 15717 W unknown:BridgelessReact: anonymous@3427:19
+11-14 16:44:52.613 15681 15717 W unknown:BridgelessReact: loadModuleImplementation@208:15
+11-14 16:44:52.613 15681 15717 W unknown:BridgelessReact: guardedLoadModule@129:46
+11-14 16:44:52.613 15681 15717 W unknown:BridgelessReact: metroRequire@69:91
+11-14 16:44:52.613 15681 15717 W unknown:BridgelessReact: global@60699:3
+11-14 16:44:52.613 15681 15717 W unknown:BridgelessReact: ")
+11-14 16:44:52.613 15681 15717 E dev.expo.updates: {"timestamp":1794671092613,"message":"ErrorRecovery: exception encountered: [runtime not ready]: Error: Intentional module-scope error in a broken update, stack:\nanonymous@3427:19\nloadModuleImplementation@208:15\nguardedLoadModule@129:46\nmetroRequire@69:91\nglobal@60699:3\n","code":"Unknown","level":"error","stacktrace":["com.facebook.react.modules.core.ExceptionsManagerModule.reportException(ExceptionsManagerModule.kt:52)","com.facebook.react.runtime.ReactInstance$ReactJsExceptionHandlerImpl.reportJsException(ReactInstance.kt:297)","com.facebook.jni.NativeRunnable.run(Native Method)","android.os.Handler.handleCallback(Handler.java:1095)","android.os.Handler.dispatchMessageImpl(Handler.java:135)","android.os.Handler.dispatchMessage(Handler.java:125)","com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.kt:21)","android.os.Looper.loopOnce(Looper.java:296)","android.os.Looper.loop(Looper.java:397)","com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion.startNewBackgroundThread$lambda$0(MessageQueueThreadImpl.kt:151)","com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)","java.lang.Thread.run(Thread.java:1572)"]}
+11-14 16:44:52.613 15681 15717 I ReactNativeJS: Running "main"
+11-14 16:44:52.613 15681 15717 E ReactNativeJS: [runtime not ready]: Invariant Violation: "main" has not been registered. This can happen if:
+11-14 16:44:52.613 15681 15717 E ReactNativeJS: * Metro (the local dev server) is run from the wrong folder. Check if Metro is running, stop it and restart it in the current project.
+11-14 16:44:52.613 15681 15717 E ReactNativeJS: * A module failed to load due to an error and `AppRegistry.registerComponent` wasn't called.
+11-14 16:44:52.613 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask()
+11-14 16:44:52.613 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask(): Resetting createReactInstance task ref
+11-14 16:44:52.614 15681 15708 I dev.expo.updates: {"timestamp":1794671092614,"message":"UpdatesErrorRecovery: attempting to fetch a new update, waiting","code":"None","level":"info"}
+11-14 16:44:52.630 15681 15681 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostResume()
+11-14 16:44:52.631 15681 15681 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Executing ReactInstanceEventListeners
+11-14 16:44:52.631 15681 15681 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask(): Starting React Native destruction
+11-14 16:44:52.631 15681 15681 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask(): Move ReactHost to onHostDestroy()
+11-14 16:44:52.631 15681 15681 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostPause()
+11-14 16:44:52.631 15681 15681 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostDestroy()
+11-14 16:44:52.632 15681 15714 I dev.expo.updates: {"timestamp":1794671092632,"message":"ErrorRecovery: remote load status changed: IDLE","code":"None","level":"info"}
+11-14 16:44:52.634 15681 15708 I dev.expo.updates: {"timestamp":1794671092634,"message":"UpdatesErrorRecovery: falling back to older update","code":"None","level":"info"}
+11-14 16:44:52.635 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask(): Stopping all React Native surfaces
+11-14 16:44:52.635 15681 15707 E unknown:SurfaceMountingManager: Stopping surface [1]
+11-14 16:44:52.636 15681 15714 I dev.expo.updates: {"timestamp":1794671092636,"message":"Updates state change: Restart, context = {isStartupProcedureRunning=false, isUpdateAvailable=false, isUpdatePending=false, isChecking=false, isDownloading=false, isRestarting=true, restartCount=0, downloadProgress=0.0, sequenceNumber=5, lastCheckForUpdateTime=Sat Nov 14 16:44:52 GMT+01:00 2026}","code":"None","level":"info"}
+11-14 16:44:52.637 15681 15714 I dev.expo.updates: {"timestamp":1794671092637,"message":"embeddedAssetFileMap: embeddedAssets count = 1","code":"None","level":"info"}
+11-14 16:44:52.638 15681 15714 I dev.expo.updates: {"timestamp":1794671092638,"message":"Updates state change: reset, context = {isStartupProcedureRunning=false, isUpdateAvailable=false, isUpdatePending=false, isChecking=false, isDownloading=false, isRestarting=false, restartCount=1, downloadProgress=0.0, sequenceNumber=6}","code":"None","level":"info"}
+11-14 16:44:52.639 15681 15681 W unknown:BridgelessReact: ReactHost{0}.onHostResume(activity)
+11-14 16:44:52.639 15681 15681 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostResume()
+11-14 16:44:52.639 15681 15707 W unknown:BridgelessReact: ReactHost{0}.reload(): Waiting for destroy to finish, before reloading React Native.
+11-14 16:44:52.653 15681 15681 E unknown:IntBufferBatchMountItem: Skipping batch of MountItems; was stopped [1].
+11-14 16:44:52.653 15681 15681 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@d832ded
+11-14 16:44:52.653 15681 15681 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.activity.OnBackPressedDispatcher$Api34Impl$createOnBackAnimationCallback$1@2447eb3
+11-14 16:44:52.653 15681 15681 D VRI[MainActivity]: WindowInsets changed: 1440x3120 statusBars:[0,145,0,0] navigationBars:[0,0,0,84] mandatorySystemGestures:[0,187,0,112] 
+11-14 16:44:52.653 15681 15681 I HWUI    : Using FreeType backend (prop=Auto)
+11-14 16:44:52.656 15681 15681 I Surface : Creating surface for consumer unnamed-15681-0 with slotExpansion=1 for 64 slots
+11-14 16:44:52.656 15681 15681 I Surface : Creating surface for consumer VRI[MainActivity]#0(BLAST Consumer)0 with slotExpansion=1 for 64 slots
+11-14 16:44:52.995 15681 15681 E unknown:SurfaceMountingManager: Surface [1] was stopped on SurfaceMountingManager.
+11-14 16:44:52.996 15681 15681 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask(): Destroying MemoryPressureRouter
+11-14 16:44:52.996 15681 15681 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask(): Resetting ReactContext ref
+11-14 16:44:52.996 15681 15681 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask(): Destroying ReactContext
+11-14 16:44:52.996 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask(): Resetting ReactInstance ptr
+11-14 16:44:52.996 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask(): Destroying ReactInstance
+11-14 16:44:53.006 15681 15707 I ExpoModulesCore: ✅ ModuleRegistry was destroyed
+11-14 16:44:53.009 15681 15707 I ExpoModulesCore: ✅ AppContext was destroyed
+11-14 16:44:53.009 15681 15707 I ExpoModulesCore: ✅ KotlinInteropModuleRegistry was destroyed
+11-14 16:44:53.009 15681 15726 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-14 16:44:53.009 15681 15726 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-14 16:44:53.009 15681 15726 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-14 16:44:53.009 15681 15726 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-14 16:44:53.009 15681 15726 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-14 16:44:53.009 15681 15726 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-14 16:44:53.010 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateDestroyTask(): Resetting start/destroy task ref
+11-14 16:44:53.010 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask()
+11-14 16:44:53.010 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting createReactInstance task ref
+11-14 16:44:53.013 15681 15681 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Starting React Native reload
+11-14 16:44:53.013 15681 15681 W unknown:BridgelessReact: ReactHost{0}.raiseSoftException(getOrCreateReloadTask()): Reload: ReactInstance task returned null. Stage: 1: Starting reload. Reload reason: Restart from RelaunchProcedure
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: Unhandled SoftException
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(getOrCreateReloadTask()): Reload: ReactInstance task returned null. Stage: 1: Starting reload. Reload reason: Restart from RelaunchProcedure
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException(ReactHostImpl.kt:906)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException$default(ReactHostImpl.kt:897)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.createReactInstanceUnwrapper$lambda$50(ReactHostImpl.kt:1279)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda37.invoke(D8$$SyntheticClass:0)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.getOrCreateReloadTask$lambda$52(ReactHostImpl.kt:1321)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda6.then(D8$$SyntheticClass:0)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeAfterTask$lambda$5(Task.kt:393)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda4.run(D8$$SyntheticClass:0)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at android.os.Handler.handleCallback(Handler.java:1095)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at android.os.Handler.dispatchMessageImpl(Handler.java:135)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at android.os.Looper.loopOnce(Looper.java:296)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at android.os.Looper.loop(Looper.java:397)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at android.app.ActivityThread.main(ActivityThread.java:9523)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at java.lang.reflect.Method.invoke(Native Method)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:575)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:939)
+11-14 16:44:53.014 15681 15681 W unknown:BridgelessReact: ReactHost{0}.raiseSoftException(getOrCreateReloadTask()): ReactContext is null. Reload reason: Restart from RelaunchProcedure
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: Unhandled SoftException
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(getOrCreateReloadTask()): ReactContext is null. Reload reason: Restart from RelaunchProcedure
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException(ReactHostImpl.kt:906)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException$default(ReactHostImpl.kt:897)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.getOrCreateReloadTask$lambda$52(ReactHostImpl.kt:1327)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda6.then(D8$$SyntheticClass:0)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeAfterTask$lambda$5(Task.kt:393)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda4.run(D8$$SyntheticClass:0)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at android.os.Handler.handleCallback(Handler.java:1095)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at android.os.Handler.dispatchMessageImpl(Handler.java:135)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at android.os.Looper.loopOnce(Looper.java:296)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at android.os.Looper.loop(Looper.java:397)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at android.app.ActivityThread.main(ActivityThread.java:9523)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at java.lang.reflect.Method.invoke(Native Method)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:575)
+11-14 16:44:53.014 15681 15681 E unknown:ReactHost: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:939)
+11-14 16:44:53.027 15681 15707 W unknown:BridgelessReact: ReactHost{0}.raiseSoftException(getOrCreateReloadTask()): Reload: ReactInstance task returned null. Stage: 2: Surface shutdown. Reload reason: Restart from RelaunchProcedure
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: Unhandled SoftException
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(getOrCreateReloadTask()): Reload: ReactInstance task returned null. Stage: 2: Surface shutdown. Reload reason: Restart from RelaunchProcedure
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException(ReactHostImpl.kt:906)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException$default(ReactHostImpl.kt:897)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.createReactInstanceUnwrapper$lambda$50(ReactHostImpl.kt:1279)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda37.invoke(D8$$SyntheticClass:0)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.getOrCreateReloadTask$lambda$53(ReactHostImpl.kt:1343)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda7.then(D8$$SyntheticClass:0)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeAfterTask$lambda$5(Task.kt:393)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda4.run(D8$$SyntheticClass:0)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at java.lang.Thread.run(Thread.java:1572)
+11-14 16:44:53.027 15681 15707 W unknown:BridgelessReact: ReactHost{0}.raiseSoftException(getOrCreateReloadTask()): Skipping surface shutdown: ReactInstance null
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: Unhandled SoftException
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(getOrCreateReloadTask()): Skipping surface shutdown: ReactInstance null
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException(ReactHostImpl.kt:906)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException$default(ReactHostImpl.kt:897)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.getOrCreateReloadTask$lambda$53(ReactHostImpl.kt:1345)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda7.then(D8$$SyntheticClass:0)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeAfterTask$lambda$5(Task.kt:393)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda4.run(D8$$SyntheticClass:0)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at java.lang.Thread.run(Thread.java:1572)
+11-14 16:44:53.027 15681 15681 W unknown:BridgelessReact: ReactHost{0}.raiseSoftException(getOrCreateReloadTask()): Reload: ReactInstance task returned null. Stage: 3: Destroying ReactContext. Reload reason: Restart from RelaunchProcedure
+11-14 16:44:53.027 15681 15681 E unknown:ReactHost: Unhandled SoftException
+11-14 16:44:53.027 15681 15681 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(getOrCreateReloadTask()): Reload: ReactInstance task returned null. Stage: 3: Destroying ReactContext. Reload reason: Restart from RelaunchProcedure
+11-14 16:44:53.027 15681 15681 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException(ReactHostImpl.kt:906)
+11-14 16:44:53.027 15681 15681 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException$default(ReactHostImpl.kt:897)
+11-14 16:44:53.027 15681 15681 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.createReactInstanceUnwrapper$lambda$50(ReactHostImpl.kt:1279)
+11-14 16:44:53.027 15681 15681 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda37.invoke(D8$$SyntheticClass:0)
+11-14 16:44:53.027 15681 15681 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.getOrCreateReloadTask$lambda$55(ReactHostImpl.kt:1355)
+11-14 16:44:53.027 15681 15681 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda8.then(D8$$SyntheticClass:0)
+11-14 16:44:53.027 15681 15681 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeAfterTask$lambda$5(Task.kt:393)
+11-14 16:44:53.027 15681 15681 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda4.run(D8$$SyntheticClass:0)
+11-14 16:44:53.027 15681 15681 E unknown:ReactHost: 	at android.os.Handler.handleCallback(Handler.java:1095)
+11-14 16:44:53.027 15681 15681 E unknown:ReactHost: 	at android.os.Handler.dispatchMessageImpl(Handler.java:135)
+11-14 16:44:53.027 15681 15681 E unknown:ReactHost: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+11-14 16:44:53.027 15681 15681 E unknown:ReactHost: 	at android.os.Looper.loopOnce(Looper.java:296)
+11-14 16:44:53.027 15681 15681 E unknown:ReactHost: 	at android.os.Looper.loop(Looper.java:397)
+11-14 16:44:53.027 15681 15681 E unknown:ReactHost: 	at android.app.ActivityThread.main(ActivityThread.java:9523)
+11-14 16:44:53.027 15681 15681 E unknown:ReactHost: 	at java.lang.reflect.Method.invoke(Native Method)
+11-14 16:44:53.027 15681 15681 E unknown:ReactHost: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:575)
+11-14 16:44:53.027 15681 15681 E unknown:ReactHost: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:939)
+11-14 16:44:53.027 15681 15681 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Removing memory pressure listener
+11-14 16:44:53.027 15681 15707 W unknown:BridgelessReact: ReactHost{0}.raiseSoftException(getOrCreateReloadTask()): Reload: ReactInstance task returned null. Stage: 4: Destroying ReactInstance. Reload reason: Restart from RelaunchProcedure
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: Unhandled SoftException
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(getOrCreateReloadTask()): Reload: ReactInstance task returned null. Stage: 4: Destroying ReactInstance. Reload reason: Restart from RelaunchProcedure
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException(ReactHostImpl.kt:906)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException$default(ReactHostImpl.kt:897)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.createReactInstanceUnwrapper$lambda$50(ReactHostImpl.kt:1279)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda37.invoke(D8$$SyntheticClass:0)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.getOrCreateReloadTask$lambda$56(ReactHostImpl.kt:1387)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda9.then(D8$$SyntheticClass:0)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeAfterTask$lambda$5(Task.kt:393)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda4.run(D8$$SyntheticClass:0)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+11-14 16:44:53.027 15681 15707 E unknown:ReactHost: 	at java.lang.Thread.run(Thread.java:1572)
+11-14 16:44:53.028 15681 15707 W unknown:BridgelessReact: ReactHost{0}.raiseSoftException(getOrCreateReloadTask()): Skipping ReactInstance.destroy(): ReactInstance null
+11-14 16:44:53.029 15681 15707 E unknown:ReactHost: Unhandled SoftException
+11-14 16:44:53.029 15681 15707 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(getOrCreateReloadTask()): Skipping ReactInstance.destroy(): ReactInstance null
+11-14 16:44:53.029 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException(ReactHostImpl.kt:906)
+11-14 16:44:53.029 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException$default(ReactHostImpl.kt:897)
+11-14 16:44:53.029 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.getOrCreateReloadTask$lambda$56(ReactHostImpl.kt:1389)
+11-14 16:44:53.029 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda9.then(D8$$SyntheticClass:0)
+11-14 16:44:53.029 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeAfterTask$lambda$5(Task.kt:393)
+11-14 16:44:53.029 15681 15707 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda4.run(D8$$SyntheticClass:0)
+11-14 16:44:53.029 15681 15707 E unknown:ReactHost: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+11-14 16:44:53.029 15681 15707 E unknown:ReactHost: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+11-14 16:44:53.029 15681 15707 E unknown:ReactHost: 	at java.lang.Thread.run(Thread.java:1572)
+11-14 16:44:53.029 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting start task ref
+11-14 16:44:53.029 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask()
+11-14 16:44:53.029 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Start
+11-14 16:44:53.029 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getJSBundleLoader()
+11-14 16:44:53.029 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating BridgelessReactContext
+11-14 16:44:53.029 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating ReactInstance
+11-14 16:44:53.057 15681 15684 I dev.repro.host: Method exceeds compiler instruction limit: 17938 in expo.modules.kotlin.modules.ModuleDefinitionData expo.modules.filesystem.FileSystemModule.definition()
+11-14 16:44:53.058 15681 15707 I ExpoModulesCore: ✅ AppContext was initialized
+11-14 16:44:53.063 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Loading JS Bundle
+11-14 16:44:53.063 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): DevSupportManager.onNewReactContextCreated()
+11-14 16:44:53.063 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Restarting previously running React Native Surfaces
+11-14 16:44:53.063 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting reload task ref
+11-14 16:44:53.063 15681 15681 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostResume()
+11-14 16:44:53.063 15681 15681 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Executing ReactInstanceEventListeners
+11-14 16:44:53.064 15681 15681 W BrownfieldSurface: React instance recreated after teardown; restarting surface main
+11-14 16:44:53.065 15681 15681 D InsetsController: hide(ime())
+11-14 16:44:53.065 15681 15681 I ImeTracker: dev.repro.host:afd6de01: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+11-14 16:44:53.065 15681 15740 W unknown:BridgelessReact: ReactHost{0}.stopSurface(surfaceId = 1): Schedule
+11-14 16:44:53.065 15681 15740 W unknown:BridgelessReact: ReactHost{0}.detachSurface(surfaceId = 1)
+11-14 16:44:53.066 15681 15707 W unknown:BridgelessReact: ReactHost{0}.stopSurface(surfaceId = 1): Execute
+11-14 16:44:53.066 15681 15707 E unknown:FabricUIManager: Unhandled SoftException
+11-14 16:44:53.066 15681 15707 E unknown:FabricUIManager: java.lang.IllegalStateException: Trying to stop surface that hasn't started yet
+11-14 16:44:53.066 15681 15707 E unknown:FabricUIManager: 	at com.facebook.react.fabric.FabricUIManager.stopSurface(FabricUIManager.java:413)
+11-14 16:44:53.066 15681 15707 E unknown:FabricUIManager: 	at com.facebook.react.runtime.ReactInstance.stopSurface(ReactInstance.kt:414)
+11-14 16:44:53.066 15681 15707 E unknown:FabricUIManager: 	at com.facebook.react.runtime.ReactHostImpl.stopSurface$lambda$4(ReactHostImpl.kt:226)
+11-14 16:44:53.066 15681 15707 E unknown:FabricUIManager: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda13.invoke(D8$$SyntheticClass:0)
+11-14 16:44:53.066 15681 15707 E unknown:FabricUIManager: 	at com.facebook.react.runtime.ReactHostImpl.callWithExistingReactInstance$lambda$32(ReactHostImpl.kt:928)
+11-14 16:44:53.066 15681 15707 E unknown:FabricUIManager: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda30.then(D8$$SyntheticClass:0)
+11-14 16:44:53.066 15681 15707 E unknown:FabricUIManager: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeImmediately$lambda$3(Task.kt:359)
+11-14 16:44:53.066 15681 15707 E unknown:FabricUIManager: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda3.run(D8$$SyntheticClass:0)
+11-14 16:44:53.066 15681 15707 E unknown:FabricUIManager: 	at com.facebook.react.runtime.internal.bolts.Executors$ImmediateExecutor.execute(Executors.kt:41)
+11-14 16:44:53.066 15681 15707 E unknown:FabricUIManager: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeImmediately(Task.kt:357)
+11-14 16:44:53.066 15681 15707 E unknown:FabricUIManager: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.access$completeImmediately(Task.kt:253)
+11-14 16:44:53.066 15681 15707 E unknown:FabricUIManager: 	at com.facebook.react.runtime.internal.bolts.Task.continueWith(Task.kt:134)
+11-14 16:44:53.066 15681 15707 E unknown:FabricUIManager: 	at com.facebook.react.runtime.internal.bolts.Task.continueWith$default(Task.kt:118)
+11-14 16:44:53.066 15681 15707 E unknown:FabricUIManager: 	at com.facebook.react.runtime.internal.bolts.Task.onSuccess$lambda$12(Task.kt:176)
+11-14 16:44:53.066 15681 15707 E unknown:FabricUIManager: 	at com.facebook.react.runtime.internal.bolts.Task$$ExternalSyntheticLambda2.then(D8$$SyntheticClass:0)
+11-14 16:44:53.066 15681 15707 E unknown:FabricUIManager: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeAfterTask$lambda$5(Task.kt:393)
+11-14 16:44:53.066 15681 15707 E unknown:FabricUIManager: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda4.run(D8$$SyntheticClass:0)
+11-14 16:44:53.066 15681 15707 E unknown:FabricUIManager: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+11-14 16:44:53.066 15681 15707 E unknown:FabricUIManager: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+11-14 16:44:53.066 15681 15707 E unknown:FabricUIManager: 	at java.lang.Thread.run(Thread.java:1572)
+11-14 16:44:53.066 15681 15681 W unknown:BridgelessReact: ReactHost{0}.onHostResume(activity)
+11-14 16:44:53.067 15681 15728 W BridgelessReactContext: [WARNING] Bridgeless doesn't support CatalystInstance. Accessing an API that's not part of the new architecture is not encouraged usage.
+11-14 16:44:53.068 15681 15728 I ExpoModulesCore: ✅ JSI interop was installed
+11-14 16:44:53.068 15681 15728 I ExpoModulesCore: ✅ Constants were exported
+11-14 16:44:53.069 15681 15728 I dev.expo.updates: {"timestamp":1794671093069,"message":"UpdatesModule: getConstants called","code":"None","level":"info"}
+11-14 16:44:53.070 15681 15728 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class expo.modules.kotlin.views.GroupViewManagerWrapper
+11-14 16:44:53.070 15681 15728 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.uimanager.LayoutShadowNode
+11-14 16:44:53.070 15681 15728 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.safeareaview.ReactSafeAreaViewManager
+11-14 16:44:53.071 15681 15728 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ReactModalHostManager
+11-14 16:44:53.071 15681 15728 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ReactProgressBarViewManager
+11-14 16:44:53.071 15681 15728 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollViewManager
+11-14 16:44:53.071 15681 15728 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.image.ReactImageManager
+11-14 16:44:53.071 15681 15728 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextViewManager
+11-14 16:44:53.072 15681 15728 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollContainerViewManager
+11-14 16:44:53.074 15681 15728 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.unimplementedview.ReactUnimplementedViewManager
+11-14 16:44:53.075 15681 15728 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactScrollViewManager
+11-14 16:44:53.075 15681 15728 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.view.ReactViewManager
+11-14 16:44:53.075 15681 15728 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.drawer.ReactDrawerLayoutManager
+11-14 16:44:53.075 15681 15728 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager
+11-14 16:44:53.079 15681 15681 W unknown:BridgelessReact: ReactHost{0}.startSurface(surfaceId = 1): Schedule
+11-14 16:44:53.079 15681 15681 W unknown:BridgelessReact: ReactHost{0}.attachSurface(surfaceId = 1)
+11-14 16:44:53.079 15681 15681 W BrownfieldSurface: Surface main restarted; hasCurrentActivity=true
+11-14 16:44:53.079 15681 15707 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask()
+11-14 16:44:53.079 15681 15707 W unknown:BridgelessReact: ReactHost{0}.startSurface(surfaceId = 1): Execute
+11-14 16:44:53.080 15681 15728 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.swiperefresh.SwipeRefreshLayoutManager
+11-14 16:44:53.081 15681 15728 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputManager
+11-14 16:44:53.082 15681 15728 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.SelectableTextViewManager
+11-14 16:44:53.082 15681 15728 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.virtual.view.ReactVirtualViewManager
+11-14 16:44:53.084 15681 15728 I ReactNativeJS: Running "main"
+11-14 16:44:58.248 15681 15779 D ProfileInstaller: Installing profile for dev.repro.host
